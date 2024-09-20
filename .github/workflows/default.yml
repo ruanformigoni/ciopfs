@@ -20,7 +20,7 @@ jobs:
 
         for arch in x86_64 aarch64; do
           docker build --platform "${arch}" -t alpine:ciopfs .
-          docker run --rm --platform "${arch}" -v $(pwd):/workdir alpine:ciopfs cp /ciopfs/ciopfs "/workdir/dist/bwrap-${arch}"
+          docker run --rm --platform "${arch}" -v $(pwd):/workdir alpine:ciopfs cp /ciopfs/ciopfs "/workdir/dist/ciopfs-${arch}"
         done
 
     - name: Set permissions for dist directory
