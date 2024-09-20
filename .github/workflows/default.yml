@@ -61,5 +61,5 @@ jobs:
             prerelease: false
             draft: false
             files: |
-              ciopfs
+              *ciopfs*
             repo_token: ${{ secrets.GITHUB_TOKEN }}
