@@ -16,4 +16,4 @@ RUN make
 RUN strip -s -R .comment -R .gnu.version --strip-unneeded ciopfs
 
 # Compress
-RUN upx --ultra-brute --no-lzma ciopfs
+# RUN upx --ultra-brute --no-lzma ciopfs
